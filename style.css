@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+    /*colors*/
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+    /*fonts*/
+--Font-size: 18px;
+--Font-Family-poppins:'Poppins';
+--Font-weight-semiBold:600;
+--Font-Family-opensans:'Open Sans';
+--Font-weight-regular:400;
+--Font-weight-bold:700;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(./images/bg-hero-desktop.svg);
+   background-repeat: no-repeat;
+   background-size: 80%;
+    background-color: var(--Very-Pale-Cyan);
+    display: grid;
+    padding: 40px 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+nav>img{
+    margin-right: auto;
+}
+nav>button{
+    padding: 12px 50px;
+    background-color:white;
+    border: none;
+    box-shadow: 0px 10px 30px rgb(230, 229, 229);
+    border-radius: 25px;
+    font-family: var(--Font-Family-opensans);
+    font-weight: var(--Font-weight-bold);
+    color: var(--Very-Dark-Cyan);
+    
+}
+#introduction{
+    display: flex;
+    margin-top: 60px;
+   color: var(--Very-Dark-Cyan);
+    gap: 50px;
+    .card{
+        width: 950px;
+        >h1{
+            font-family: var(--Font-Family-poppins);
+            font-weight: var(--Font-weight-semiBold);
+            width: 400px;
+            margin-top: 80px;
+        }
+        >p{
+            font-family: var(--Font-Family-opensans);
+            font-weight: var(--Font-weight-regular);
+            font-size: var(--Font-size);
+            margin-top: 20px;
+        }
+        >button{
+            padding: 13px 50px;
+            border: none;
+            background-color: var(--Pink);
+            color: white;
+            font-family: var(--Font-Family-opensans);
+            font-weight: var(--Font-weight-bold);
+            border-radius: 25px;
+           margin-top: 20px;
+           box-shadow: 0px 3px 15px gainsboro;
+        }
+    }
+}
+button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#introduction>div>img{
+    width: 100%;
+}
+#mobile{
+display: none;
+}
+.container{
+    display: flex;
+    margin:90px 70px;
+    padding: 50px 40px;
+    box-shadow: 0px 3px 20px gainsboro;
+    border-radius: 10px;
+    gap: 20px;
+}
+.Card{
+margin: 70px 60px;
+}
+.container>div>img{
+    width: 100%;
+}
+.container>div>h2{
+    font-family: var(--Font-Family-poppins);
+    font-weight: var(--Font-weight-semiBold);
+}
+.container>div>p{
+    font-family: var(--Font-Family-opensans);
+    font-weight: var(--Font-weight-regular);
+    font-size: var(--Font-size);
+    margin-top: 20px;
+    width: 500px;
+    color: var(--Grayish-Blue);
+}
+#fourth-container{
+    margin:70px 250px;
+    padding: 40px 60px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0px -3px 20px gainsboro;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+    >h2{
+        font-size: 2rem;
+        font-family: var(--Font-Family-poppins);
+        font-weight: var(--Font-weight-semiBold);
+    }
+    >button{
+        padding: 13px 50px;
+        border: none;
+        background-color: var(--Pink);
+        color: white;
+        font-family: var(--Font-Family-opensans);
+        font-weight: var(--Font-weight-bold);
+        border-radius: 25px;
+       margin-top: 20px;
+       box-shadow: 0px 3px 15px gainsboro;
+    }
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    margin-top: -130px;
+    z-index: 0;
+    padding: 130px 80px;
+    display: flex;
+    gap: 100px;
+    >div{
+        >img{
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+ul{
+    list-style: none;
+    margin-top: 50px;
+    >li{
+        font-family: var(--Font-Family-opensans);
+        font-weight: var(--Font-weight-regular);
+        font-size: var(--Font-size);
+        color: white;
+    }
+}
+#contact>ul>li>p{
+width: 400px;
+}
+ul>li{
+margin-top: 30px;
+}
+.menu{
+    margin-top: 45px;
+}
+#social-media>ul{
+    display: flex;
+    margin-top: 60px;
+}
+
+.default{
+    margin-left: -64px;
+}
+.default:hover{
+    display: none;
+    cursor: pointer;
+}
+#social-media{
+    display: grid;
+}
+#social-media>small{
+    margin-top: 150px;
+    width: 300px;
+    font-family: var(--Font-Family-opensans);
+    font-weight: var(--Font-weight-regular);
+    color: white;
+}
+@media (max-width:550px) {
+    header{
+        background-image: url(./images/bg-hero-mobile.svg);
+       padding: 0px 0px;
+    }
+    nav{
+        padding: 30px 15px;
+    }
+    nav>img{
+        width: 120px;
+    }
+    nav>button{
+       padding: 6px 30px;
+    }
+    #introduction {
+     display: grid;
+     padding:0px 30px;
+     text-align: center;
+     margin-bottom: 40px;
+    >.card{
+       width: 320px;
+        >h1{
+           font-size: 1.6rem;
+            width: 300px;
+            margin-top: 0px;
+        }
+        >p{
+            font-size:17px;
+        }
+        >button{
+           margin-top: 35px;
+        }
+    }
+  }
+    #desktop{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+        margin:50px 25px;
+        padding: 50px;
+    }
+    .container>div>img{
+        width: 100%;
+        grid-row-start: 0;
+        grid-row-end: 1;
+        position: relative;
+        top: -150px;
+    }
+    .Card{
+        margin: 0px -40px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        position: relative;
+        text-align: center;
+        top: 230px;
+        bottom: 20px;
+        }
+    .container>div>h2{
+        font-size: 1rem;
+    }
+    .container>div>p{
+        font-size: 15px;
+        width: 300px;
+    }
+    #second-container>div>p{
+       width: 270px;
+       margin-left: 17px;
+       margin-bottom: 25px;
+    }
+    #third-container>div>p{
+        width: 260px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+    #fourth-container{
+        margin:100px 15px;
+        padding: 40px 0px;
+        >h2{
+            font-size: 1.1rem;
+        }
+        >button{
+            padding: 8px 50px;
+            border: none;
+            background-color: var(--Pink);
+            color: white;
+            font-family: var(--Font-Family-opensans);
+            font-weight: var(--Font-weight-bold);
+            border-radius: 25px;
+           margin-top: 20px;
+           box-shadow: 0px 3px 15px gainsboro;
+        }
+    }
+    footer{
+        margin-top: -150px;
+        padding: 150px 25px;
+        display: grid;
+        >div{
+            >img{
+                width: 200px;
+            }
+        }
+    }
+    ul{
+        list-style: none;
+        margin-top: 0px;
+        >li{
+            font-family: var(--Font-Family-opensans);
+            font-weight: var(--Font-weight-regular);
+            font-size: var(--Font-size);
+            color: white;
+        }
+    }
+    #contact{
+        margin-bottom: 40px;
+    }
+    #contact>ul>li>p{
+    width: 320px;
+    font-size: 17px;
+    }
+    #contact>ul>li>p>img{
+        margin-right:20px ;
+        }
+    ul>li{
+    margin-top: 25px;
+    }
+    .menu{
+        margin-top: -100px;
+    }
+    #social-media>ul{
+        display: flex;
+        margin-top: -50px;
+    }
+    #social-media>ul>li>img{
+        width: 48px;
+    }
+    .default{
+        margin-left: -48px;
+    }
+    #social-media{
+        display: grid;
+        place-items: center;
+    }
+    #social-media>small{
+        margin-top: 20px;
+    }
+}
